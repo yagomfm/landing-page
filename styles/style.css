@@ -1,2 +1,30 @@
 @charset "UTF-8";
 
+:root {
+    --color1: ;
+    --font1: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #252525;
+    color: white;
+}
+
+main {
+    background: #ffffff;
+}
+
+footer {
+    background: #252525;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer p {
+    color: white;
+}
