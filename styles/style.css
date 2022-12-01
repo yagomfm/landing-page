@@ -1,8 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
 
 :root {
-    --color1: ;
-    --font1: ;
+    --color1: #6a7bff;
+    --color2: #f07067;
+    --color3: #30b7ff;
+    --color4: #13141f;
+    --font1: Arial, Helvetica, sans-serif;
+    --font2: 'Imprima', sans-serif;
 }
 
 * {
@@ -13,17 +18,20 @@
 header {
     background: #252525;
     color: white;
+    font-family: var(--font2);
+}
+
+nav {
+    position: sticky;
+    background: var(--color3);
 }
 
 main {
-    background: #ffffff;
+    background: white;
 }
 
 footer {
     background: #252525;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
 }
 footer p {
     color: white;
