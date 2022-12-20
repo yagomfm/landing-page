@@ -15,24 +15,37 @@
         Cabeçalho
     </header>
     <nav>
-        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-        <ul>
-            <li><a href="#">Opção 1</a></li>
-            <li><a href="#">Opção 2</a></li>
-            <li><a href="#">Opção 3</a></li>
-            <li><a href="#">Opção 4</a></li>
-            <li><a href="#">Opção 5</a></li>
-        </ul>
+        <!--<button onclick="toggleMenu()" class="burger"></button>-->
+        <button class="button">Home</button>
+        <div class="dropdown">
+            <button class="button">
+                services
+                <img src="images/chevron.svg" />
+            </button>
+            <div class="dropdown-menu">
+                <button>Opção 1</button>
+                <button>Opção 2</button>
+                <button>Opção 3</button>
+            </div>
+        </div>
+        <button></button>
+    </nav>        
     <main class="container">
         <section class="conteudo-1">
             <div>
                 <h1>Conteudo 1</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt saepe est natus blanditiis culpa soluta possimus debitis consequuntur cumque quia nisi modi dolores, odio aliquam, eum harum. Consectetur, rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ratione magni sunt assumenda? Possimus cupiditate sunt repudiandae, consequatur eligendi doloremque quos tempora ducimus porro numquam cumque quaerat velit quisquam ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id iure quisquam architecto nihil, incidunt aspernatur. Dignissimos excepturi repudiandae laborum nam nobis voluptates natus doloremque, quam aperiam numquam delectus. Odio.</p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda incidunt saepe est natus blanditiis culpa soluta possimus debitis consequuntur cumque quia nisi modi dolores, odio aliquam, eum harum. Consectetur, rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ratione magni sunt assumenda? Possimus cupiditate sunt repudiandae, consequatur eligendi doloremque quos tempora ducimus porro numquam cumque quaerat velit quisquam ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id iure quisquam architecto nihil, incidunt aspernatur. Dignissimos excepturi repudiandae laborum nam nobis voluptates natus doloremque, quam aperiam numquam delectus. Odio.
+                </p>
             </div>
         </section>
     </main>
     <footer>
         <p class="footer">Footer</p>
     </footer>
+    
+    <!--<script>
+        const toggleMenu = () => document.body.classList.toggle("open");
+    </script>-->
 </body>
 </html>
