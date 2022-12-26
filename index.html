@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>The Grand Hotel</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="event-description">
-        <div id="disclamer">
-            <h2>InDecor</h2>
+        <div id="disclaimer">
+            <h2>The Grand Hotel</h2>
             <p class="about-event">
-                Um evento para revolucionar a sua criatividade
+                Um local para relaxar e aproveitar com a família
             </p>
-            <p>Data do evento: </p>
-            <p class="event-date">Domingo, 28 de maio, a partir das 14h</p>
+            <p id="cta-disc">Conheça nosso hotel:</p>
+            <button class="btn" id="btn-disc"><a href="#key-benefits">Saiba mais</a></button>
         </div>
         <div id="subscription-form">
             <p>
-                Preencha o fomrulário para receber os detalhes do evento
+                Preencha o formulário e reserve já sua hospedagem
             </p>
             <form>
                 <div class="form-group">
@@ -33,28 +34,104 @@
                     <input type="email" name="email" placeholder="Digite seu e-mail">
                 </div>
                 <div class="form-group">
-                    <label for="phone">Telefone</label>
-                    <input type="tel" name="phone" placeholder="Número de Whatsapp">
+                    <label for="data">Data de entrada</label>
+                    <input type="date" name="date" placeholder="Data de check-in">
                 </div>
                 <div class="form-group">
-                    <label for="interest">Principal interesse</label>
-                    <select name="interrest">
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="apartment">Apartamentos</option>
-                        <option value="house">Casas</option>
-                        <option value="garden">jardins</option>
-                        <option value="other">Outros</option>
-                    </select>
+                    <label for="data">Data de saída</label>
+                    <input type="date" name="date" placeholder="Data de check-out">
                 </div>
-                <input type="button" class="btn" value="Quero me inscrever">
+                <input type="button" class="btn" value="Reservar">
             </form>
         </div>
     </header>      
     <main class="container">
-        <i class="bi bi-yin-yang"></i>
+        <section id="key-benefits">
+            <h2>Nossas instalações:</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3 class="title-suite">Suíte padrão</h3>
+                    <div id="benefit-1" class="benefit-img"></div>
+                    <p>
+                        1 cama de casal, banheira, frigobar, televisão
+                    </p>
+                </div>
+                <div class="benefit">
+                    <h3 class="title-suite">Suíte família</h3>
+                    <div id="benefit-2" class="benefit-img"></div>
+                    <p>
+                        1 cama de casal e 2 de solteiro, banheira, frigobar, televisão
+                    </p>
+                </div>
+                <div class="benefit">
+                    <h3 class="title-suite">Suíte premium</h3>
+                    <div id="benefit-3" class="benefit-img"></div>
+                    <p>
+                        1 cama de casal e 1 de solteiro, de frente para a praia, banheira, frigobar, televisão
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="location">
+            <div id="address">
+                <i class="bi bi-geo-alt-fill"></i>
+                <div id="adress-details">
+                    <p>Rua do local, 1333</p>
+                    <p>Bairro</p>
+                    <p>Check-in apartir das 14h</p>
+                </div>
+            </div>
+            <div id="about-location">
+                <h3>Localização</h3>
+                <p>
+                    Local relaxante, paradisíaco e familiar, onde teremos vários ambientes de lazer, tanto internos como externos, com paisagens aturais exóticas e únicas.
+                </p>
+            </div>
+        </section>
+        <section id="details">
+            <div class="detail" id="detail-1">
+                <img src="images/hall.jpg" alt="Sala decorada em tons claros">
+                <div class="detail-description">
+                    <h3>Conheça aqui nossos ambientes e as nossas atividades de lazer</h3>
+                </div>
+            </div>
+            <div class="detail" id="detail-2">
+                <div class="detail-description">
+                    <h3>Lazer</h3>
+                    <ul>
+                        <li>Piscina</li>
+                        <li>Espaço para crianças</li>
+                        <li>Salão de jogos</li>
+                        <li>Praia</li>
+                        <li>E muito mais...</li>
+                    </ul>
+                </div>
+                <img src="images/lazer-1.jpg" alt="Sala de jantas decorado">
+            </div>
+            <div class="detail" id="detail-3">
+                <img src="images/lazer-3.jpg" alt="Sala decorada em tons escuros">
+                <div class="detail-description">
+                    <h3>Atividades</h3>
+                    <ul>
+                        <li>Trilhas</li>
+                        <li>Excursão turística</li>
+                        <li>Mergulho</li>
+                        <li>Passeio de barco</li>
+                        <li>E muito mais...</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="cta">
+            <h3>Gostou? Então reserve já:</h3>
+            <button class="btn">Garantir reserva</button>
+        </section>
     </main>
-    <footer>
-        <p class="footer">Footer</p>
+    <footer id="footer">
+        <h3>The Grand Hotel</h3>
+        <p>Referência em satisfação e qualidade</p>
+        <p><span>Entre em contato:</span> oi@grandhotel.com.br</p>
+        <p><span>Ou pelo telefone:</span> (55)99999-9999</p>
     </footer>
 </body>
 </html>
